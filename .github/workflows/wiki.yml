@@ -24,6 +24,7 @@ jobs:
           tinytex::install_tinytex()
           tinytex::tlmgr_install("hyphen-french")
           tinytex::tlmgr_install("hyphen-italian")
+          tinytex::tlmgr_install("tabu")
         shell: Rscript {0}
       - name: Render pdf book
         run: |
