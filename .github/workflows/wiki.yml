@@ -52,7 +52,7 @@ jobs:
           name: ghpages
           path: docs
       - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@v4
+        uses: Cecilapp/GitHub-Pages-deploy@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
