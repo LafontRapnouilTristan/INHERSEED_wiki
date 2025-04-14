@@ -34,7 +34,7 @@ jobs:
           bookdown::render_book("index.Rmd", "bookdown::gitbook")
         shell: Rscript {0}
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ghpages
           path: docs
