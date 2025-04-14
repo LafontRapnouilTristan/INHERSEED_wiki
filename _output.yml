@@ -20,9 +20,4 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki" target="blank">Published with bookdown</a></li>
     download: "pdf"
-bookdown::bs4_book:
-  css: bs4_style.css
-  theme:
-    primary: "#096B72"
-  repo: https://github.com/LafontRapnouilTristan/INHERSEED_wiki
 bookdown::word_document2: default
