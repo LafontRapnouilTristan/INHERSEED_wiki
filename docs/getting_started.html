@@ -1,91 +1,222 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xml:lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>2 Getting Started | Memoir Template</title>
-<meta name="author" content="Authors’ names">
-<meta name="description" content="RStudio in version higher than 1 must be used. The bookdown package must be installed. For the creation of the PDF file, an installation of LaTeX is necessary. Under Windows, use MikTex. The...">
-<meta name="generator" content="bookdown 0.42 with bs4_book()">
-<meta property="og:title" content="2 Getting Started | Memoir Template">
-<meta property="og:type" content="book">
-<meta property="og:url" content="https://GitHubID.github.io/Repository/getting_started.html">
-<meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png">
-<meta property="og:description" content="RStudio in version higher than 1 must be used. The bookdown package must be installed. For the creation of the PDF file, an installation of LaTeX is necessary. Under Windows, use MikTex. The...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2 Getting Started | Memoir Template">
-<meta name="twitter:description" content="RStudio in version higher than 1 must be used. The bookdown package must be installed. For the creation of the PDF file, an installation of LaTeX is necessary. Under Windows, use MikTex. The...">
-<meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
-    
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  </style>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Getting Started | Memoir Template</title>
+  <meta name="description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Getting Started | Memoir Template" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+  <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="github-repo" content="GitHubID/Repository" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Getting Started | Memoir Template" />
+  
+  <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+
+<meta name="author" content="Tristan Lafont Rapnouil, Mathilde Brunel &amp; Marie Simonin" />
+
+
+<meta name="date" content="2025-04-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-framework.html"/>
+<link rel="next" href="syntax.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
 <style type="text/css">
-    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-          margin-bottom: 0em;
-        }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
-  </style>
-<link rel="stylesheet" href="bs4_style.css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body data-spy="scroll" data-target="#toc">
 
-<div class="container-fluid">
-<div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<body>
 
-    <div class="d-flex align-items-start justify-content-between">
-      <h1>
-        <a href="index.html" title="">Memoir Template</a>
-      </h1>
-      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
-    </div>
 
-    <div id="main-nav" class="collapse-lg">
-      <form role="search">
-        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">Introduction</a></li>
-<li><a class="" href="data-framework.html"><span class="header-section-number">1</span> Data framework</a></li>
-<li><a class="active" href="getting_started.html"><span class="header-section-number">2</span> Getting Started</a></li>
-<li><a class="" href="syntax.html"><span class="header-section-number">3</span> Syntax</a></li>
-<li><a class="" href="references.html">References</a></li>
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inherseed's wiki</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="data-framework.html"><a href="data-framework.html"><i class="fa fa-check"></i><b>1</b> Data framework</a></li>
+<li class="chapter" data-level="2" data-path="getting_started.html"><a href="getting_started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="getting_started.html"><a href="getting_started.html#index"><i class="fa fa-check"></i><b>2.1</b> index.Rmd</a></li>
+<li class="chapter" data-level="2.2" data-path="getting_started.html"><a href="getting_started.html#bookdown.yml"><i class="fa fa-check"></i><b>2.2</b> _bookdown.yml</a></li>
+<li class="chapter" data-level="2.3" data-path="getting_started.html"><a href="getting_started.html#output.yml"><i class="fa fa-check"></i><b>2.3</b> _output.yml</a></li>
+<li class="chapter" data-level="2.4" data-path="getting_started.html"><a href="getting_started.html#multilingual-documents"><i class="fa fa-check"></i><b>2.4</b> Multilingual documents</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="syntax.html"><a href="syntax.html"><i class="fa fa-check"></i><b>3</b> Syntax</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="syntax.html"><a href="syntax.html#write"><i class="fa fa-check"></i><b>3.1</b> Write</a></li>
+<li class="chapter" data-level="3.2" data-path="syntax.html"><a href="syntax.html#r-code"><i class="fa fa-check"></i><b>3.2</b> R code</a></li>
+<li class="chapter" data-level="3.3" data-path="syntax.html"><a href="syntax.html#figures"><i class="fa fa-check"></i><b>3.3</b> Figures</a></li>
+<li class="chapter" data-level="3.4" data-path="syntax.html"><a href="syntax.html#tables"><i class="fa fa-check"></i><b>3.4</b> Tables</a></li>
+<li class="chapter" data-level="3.5" data-path="syntax.html"><a href="syntax.html#maths"><i class="fa fa-check"></i><b>3.5</b> Maths</a></li>
+<li class="chapter" data-level="3.6" data-path="syntax.html"><a href="syntax.html#cross-references"><i class="fa fa-check"></i><b>3.6</b> Cross-references</a></li>
+<li class="chapter" data-level="3.7" data-path="syntax.html"><a href="syntax.html#bibliography"><i class="fa fa-check"></i><b>3.7</b> Bibliography</a></li>
+<li class="chapter" data-level="3.8" data-path="syntax.html"><a href="syntax.html#forcing-line-breaks"><i class="fa fa-check"></i><b>3.8</b> Forcing line breaks</a></li>
+<li class="chapter" data-level="3.9" data-path="syntax.html"><a href="syntax.html#sec:languages"><i class="fa fa-check"></i><b>3.9</b> Languages</a></li>
+<li class="chapter" data-level="3.10" data-path="syntax.html"><a href="syntax.html#chapter-summary"><i class="fa fa-check"></i><b>3.10</b> Chapter summary</a></li>
+<li class="chapter" data-level="3.11" data-path="syntax.html"><a href="syntax.html#local-table-of-contents"><i class="fa fa-check"></i><b>3.11</b> Local table of contents</a></li>
+<li class="chapter" data-level="3.12" data-path="syntax.html"><a href="syntax.html#boxed-text"><i class="fa fa-check"></i><b>3.12</b> Boxed text</a></li>
+<li class="chapter" data-level="3.13" data-path="syntax.html"><a href="syntax.html#documentation"><i class="fa fa-check"></i><b>3.13</b> Documentation</a>
+<ul>
+<li class="chapter" data-level="3.13.1" data-path="syntax.html"><a href="syntax.html#user-documentation"><i class="fa fa-check"></i><b>3.13.1</b> User documentation</a></li>
+<li class="chapter" data-level="3.13.2" data-path="syntax.html"><a href="syntax.html#documentation-for-developers"><i class="fa fa-check"></i><b>3.13.2</b> Documentation for developers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki" target="blank">Published with bookdown</a></li>
+
 </ul>
 
-        <div class="book-extra">
-          <p><a id="book-repo" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki">View book source <i class="fab fa-github"></i></a></p>
-        </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="getting_started" class="section level1" number="2">
-<h1>
-<span class="header-section-number">2</span> Getting Started<a class="anchor" aria-label="anchor" href="#getting_started"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Memoir Template</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="getting_started" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Getting Started<a href="getting_started.html#getting_started" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p><em>RStudio</em> in version higher than 1 must be used.
 The <strong>bookdown</strong> package must be installed.</p>
 <p>For the creation of the PDF file, an installation of LaTeX is necessary.
@@ -95,13 +226,11 @@ The automatic download of missing packages (under Windows: MiKTeX settings, <em>
 All other <em>.Rmd</em> files in the folder contain a chapter: the order of chapters is that of the file names, sorted alphabetically.
 The <em>references.bib</em> file contains the bibliography.</p>
 <p>The basic parameters of the project must be entered in the following files.</p>
-<div id="index" class="section level2" number="2.1">
-<h2>
-<span class="header-section-number">2.1</span> index.Rmd<a class="anchor" aria-label="anchor" href="#index"><i class="fas fa-link"></i></a>
-</h2>
+<div id="index" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> index.Rmd<a href="getting_started.html#index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In the file header, enter the title of the work and the name of the author(s).</p>
-<pre><code>title: "Title of the Memoir" 
-author: "Authors' names"</code></pre>
+<pre><code>title: &quot;Title of the Memoir&quot; 
+author: &quot;Authors&#39; names&quot;</code></pre>
 <p>The date field may be kept to display the knitting date automatically.</p>
 <p>The <code>url</code> field contains the link to the GitHub pages of the project.
 It is used by <code>build_readme()</code>.</p>
@@ -117,7 +246,7 @@ If a PDF file is used as the PDF book cover (see below), a good idea is to expor
 The content of <em>epigraph</em> and <em>credits</em> will be written on page 2, with <code>images/logo.pdf</code>.</li>
 <li>the first page of the PDF file declared in the <em>pdftitlepage</em> instruction if it is present.</li>
 </ul>
-<p>Delete one of the two instructions in the header or both covers will be built, like in the gallery<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://ericmarcon.github.io/memoiR/gallery/memoir/MyBook.pdf" class="uri"&gt;https://ericmarcon.github.io/memoiR/gallery/memoir/MyBook.pdf&lt;/a&gt;&lt;/p&gt;'><sup>1</sup></a>.</p>
+<p>Delete one of the two instructions in the header or both covers will be built, like in the gallery<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <p>The languages are specified according to the IETF language tags, such as “en-US”.
 The main language (<code>lang</code>) is that of the structure of the document, translating elements such as “chapter”.
 The other languages (<code>otherlangs</code>) can be used to switch language inside the PDF document to benefit from correct hyphenation.</p>
@@ -128,29 +257,21 @@ Any valid csl file can be used: uncomment the line and enter the file name.
 Note that PDF outputs use their own style: see below.</p>
 <p>LaTeX specific options are:</p>
 <ul>
-<li>
-<em>documentclass</em>: the document class is <em>memoir</em> for this template.
+<li><em>documentclass</em>: the document class is <em>memoir</em> for this template.
 The options of the <em>memoir</em> class are listed, not to be changed normally.</li>
-<li>
-<em>papersize</em>: A4.</li>
-<li>
-<em>fontsize</em>: 11pt.</li>
-<li>
-<em>mainfont</em> and <em>mathfont</em> may replace the standard Computer Modern font.
-Tex Gyre fonts<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www.ctan.org/pkg/tex-gyre" class="uri"&gt;https://www.ctan.org/pkg/tex-gyre&lt;/a&gt;&lt;/p&gt;'><sup>2</sup></a> are a good choice.
+<li><em>papersize</em>: A4.</li>
+<li><em>fontsize</em>: 11pt.</li>
+<li><em>mainfont</em> and <em>mathfont</em> may replace the standard Computer Modern font.
+Tex Gyre fonts<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> are a good choice.
 Both <strong>tex-gyre</strong> and <strong>tex-gyre-math</strong> LaTeX packages must be available.</li>
-<li>
-<em>MemoirChapStyle</em> and <em>MemoirPageStyle</em> define the style of the document.
+<li><em>MemoirChapStyle</em> and <em>MemoirPageStyle</em> define the style of the document.
 Two styles are favored: <em>companion</em> for documents with large outer margins containing notes, references and captions, or <em>daleif1</em> and <em>Ruled</em> for more classical layouts with small margins.</li>
 <li>Margins: choose whether to use <em>largemargins</em> or not, and adjust the other parameters according to that.
 Margin values should work well in most cases.</li>
-<li>
-<em>toc-depth</em>: number of levels in the table of contents, 2 by default (i.e. <code>###</code> subsections are shown).</li>
-<li>
-<em>secnum-depth</em>: The lowest numbered level in the document. Default is <code>section</code> (i.e. <code>##</code>).
+<li><em>toc-depth</em>: number of levels in the table of contents, 2 by default (i.e. <code>###</code> subsections are shown).</li>
+<li><em>secnum-depth</em>: The lowest numbered level in the document. Default is <code>section</code> (i.e. <code>##</code>).
 Alternatives are <code>chapter</code> (i.e. <code>#</code>), <code>subsection</code> (i.e. <code>###</code>) or <code>subsubsection</code> (i.e. <code>####</code>).</li>
-<li>
-<em>lot</em> and <em>lof</em> to add lists of tables and figures.</li>
+<li><em>lot</em> and <em>lof</em> to add lists of tables and figures.</li>
 </ul>
 <p>Bibliography is managed by BibLaTeX, whose options should not be changed except for the style.
 It is <code>verbose-inote</code> in documents with large margins to show the full citations in them.
@@ -171,55 +292,46 @@ The items of <code>backcover</code> are a list:</p>
 <p><code>backcoverfontsize</code> may be changed better fit the page size, according to the length of the abstracts.</p>
 <p>Some options should not be modified, including:</p>
 <ul>
-<li>
-<em>fig_crop</em>: yes to allow cropping of excess margins of figures.
+<li><em>fig_crop</em>: yes to allow cropping of excess margins of figures.
 GhostScript must be installed.
 If it is not, or in order to save computing time, the option may be set to <code>no</code>.</li>
 </ul>
 <p>Some may be added to the header:</p>
 <ul>
-<li>
-<em>fontfamily</em>: <a href="https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families">font</a>, <em>lmodern</em> by default.</li>
-<li>
-<em>linestretch</em>: line spacing, 1 by default.</li>
+<li><em>fontfamily</em>: <a href="https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families">font</a>, <em>lmodern</em> by default.</li>
+<li><em>linestretch</em>: line spacing, 1 by default.</li>
 </ul>
 <p>For a student thesis, prepare the cover page with Word, Powerpoint or a DTP program and save it in PDF format, in A4 size.
 Only the first page of the PDF is used.</p>
 </div>
-<div id="bookdown.yml" class="section level2" number="2.2">
-<h2>
-<span class="header-section-number">2.2</span> _bookdown.yml<a class="anchor" aria-label="anchor" href="#bookdown.yml"><i class="fas fa-link"></i></a>
-</h2>
+<div id="bookdown.yml" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> _bookdown.yml<a href="getting_started.html#bookdown.yml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Enter the name of the Rmd file that will be the result of the merging of all chapters and choose if it should be destroyed after use.
 It will also be the name of the PDF and Word files.
 The default options will suit most uses.</p>
-<pre><code>book_filename: "MyBook"
+<pre><code>book_filename: &quot;MyBook&quot;
 delete_merged_file: true</code></pre>
 <p>If the project is hosted on GitHub, indicate its address.
 Otherwise, delete the line.</p>
-<pre><code>repo: "https://github.com/GitHubID/Repository"</code></pre>
+<pre><code>repo: &quot;https://github.com/GitHubID/Repository&quot;</code></pre>
 <p>The knitted files are stored in the output directory.
 <code>docs</code> is the good choice for GitHub Pages.</p>
 </div>
-<div id="output.yml" class="section level2" number="2.3">
-<h2>
-<span class="header-section-number">2.3</span> _output.yml<a class="anchor" aria-label="anchor" href="#output.yml"><i class="fas fa-link"></i></a>
-</h2>
+<div id="output.yml" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> _output.yml<a href="getting_started.html#output.yml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Customize the table of contents in HTML format.</p>
 <pre><code>config:
   toc:
     before: |
-      &lt;li&gt;&lt;a href="./"&gt;Bookdown book&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;./&quot;&gt;Bookdown book&lt;/a&gt;&lt;/li&gt;
     after: |
-      &lt;li&gt;&lt;a href="https://github.com/GitHubID/Repository"</code></pre>
+      &lt;li&gt;&lt;a href=&quot;https://github.com/GitHubID/Repository&quot;</code></pre>
 <p>Update the repository in the bs4 book options.</p>
 <pre><code>bookdown::bs4_book:
  repo: https://github.com/GitHubID/Repository</code></pre>
 </div>
-<div id="multilingual-documents" class="section level2" number="2.4">
-<h2>
-<span class="header-section-number">2.4</span> Multilingual documents<a class="anchor" aria-label="anchor" href="#multilingual-documents"><i class="fas fa-link"></i></a>
-</h2>
+<div id="multilingual-documents" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Multilingual documents<a href="getting_started.html#multilingual-documents" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Languages are declared in the document header.</p>
 <p>The main language of the document (<code>lang</code>) changes the name of some elements, such as the table of contents.
 To use other languages in the text, they must be declared in <code>otherlangs</code>.</p>
@@ -231,44 +343,75 @@ See the correct syntax in section <a href="syntax.html#sec:languages">3.9</a>.</
 
 </div>
 </div>
-
-  <div class="chapter-nav">
-<div class="prev"><a href="data-framework.html"><span class="header-section-number">1</span> Data framework</a></div>
-<div class="next"><a href="syntax.html"><span class="header-section-number">3</span> Syntax</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#getting_started"><span class="header-section-number">2</span> Getting Started</a></li>
-<li><a class="nav-link" href="#index"><span class="header-section-number">2.1</span> index.Rmd</a></li>
-<li><a class="nav-link" href="#bookdown.yml"><span class="header-section-number">2.2</span> _bookdown.yml</a></li>
-<li><a class="nav-link" href="#output.yml"><span class="header-section-number">2.3</span> _output.yml</a></li>
-<li><a class="nav-link" href="#multilingual-documents"><span class="header-section-number">2.4</span> Multilingual documents</a></li>
-</ul>
-
-      <div class="book-extra">
-        <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki/blob/master/81-getting_started.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki/edit/master/81-getting_started.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
-        </ul>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://ericmarcon.github.io/memoiR/gallery/memoir/MyBook.pdf" class="uri">https://ericmarcon.github.io/memoiR/gallery/memoir/MyBook.pdf</a><a href="getting_started.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.ctan.org/pkg/tex-gyre" class="uri">https://www.ctan.org/pkg/tex-gyre</a><a href="getting_started.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
-    </nav>
-</div>
+            </section>
 
-</div>
-</div> <!-- .container -->
-
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
-
-  <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Memoir Template</strong>" was written by Authors’ names. It was last built on 2025-04-14.</p>
+          </div>
+        </div>
+      </div>
+<a href="data-framework.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="syntax.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
   </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["Wiki_INHERSEED.pdf"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
 
-  <div class="col-12 col-md-6 mt-3">
-    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
-  </div>
-
-</div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -280,22 +423,7 @@ See the correct syntax in section <a href="syntax.html#sec:languages">3.9</a>.</
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
-for (let popover of popovers) {
-  const div = document.createElement('div');
-  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
-  div.innerHTML = popover.getAttribute('data-content');
-
-  var has_math = div.querySelector("span.math");
-  if (has_math) {
-    document.body.appendChild(div);
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
-    MathJax.Hub.Queue(function() {
-      popover.setAttribute('data-content', div.innerHTML);
-      document.body.removeChild(div);
-    })
-  }
-}
 </script>
 </body>
+
 </html>

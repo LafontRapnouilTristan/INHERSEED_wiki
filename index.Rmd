@@ -1,6 +1,6 @@
 --- 
-title: "Title of the Memoir"
-author: "Authors' names"
+title: "Inherseed's wiki"
+author: "Tristan Lafont Rapnouil, Mathilde Brunel & Marie Simonin"
 date: "`r Sys.Date()`"
 url: https://GitHubID.github.io/Repository/
 github-repo: GitHubID/Repository
@@ -88,9 +88,6 @@ chaptersummary: In a Nutshell
 backcover:
   - language: english
     abstract: |
-      English abstract, on the last page.
-  
-      This is a bookdown template based on LaTeX memoir class.
     keywords:
       - Keyword in English
       - As a list
@@ -221,37 +218,14 @@ set.seed(973)
 
 
 # Introduction {-}
+ 
+Plant microbial INHERitance across generations through SEEDs: impact of this primary inoculum on plant fitness and microbiota assembly
+ 
+This document acts as a wiki-like platform regarding all protocols and data treatment within the INHERSEED project. The project is lead by Marie Simonin (PI - INSERT WEBSITE), Tristan Lafont Rapnouil is a post-doc in charge of monitoring the project progress and data acquisition and, Mathilde Brunel is a technician involved in greenhouse managing and wetlab experimentations.
 
-This document allows you to create a book in PDF format (and ePub format) at the same time as an HTML version to be published on the web.
-The syntax is that of **Markdown** with some extensions.
+While not all data and protocols can be hosted on Github, links to where they are actually findable are persented in this document.
 
-The **bookdown** package must be installed from CRAN or GitHub:
-
-```{r}
-#| label: bookdown
-#| eval: false
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
-```
-
-The book is organized in chapters. 
-Each chapter is an Rmd file, whose name normally begins with its number (e.g. `01-intro.Rmd`).
-All Rmd files in the project folder are actually treated as chapters, sorted by filename.
-The index.Rmd file is special: it contains the document header and the first chapter.
-
-This first chapter is placed in the foreword of the printed book: it should not be numbered (hence the `{-}` code next to the title) in the HTML version.
-It must end with the LaTeX command `\mainmatter` which marks the beginning of the body of the book.
-
-The outline levels start with `#` for chapters (only one per file), `##` for sections, etc.
-
-Compilation in PDF format is done by XeLaTeX, which must be installed.
-
-While writing, it is strongly advised to create only the HTML file, which is much faster than a LaTeX compilation.
-Each chapter can be viewed very quickly by clicking on the _Knit_ button above the source window.
-The entire book is created by clicking on the _Build Book_ button in the RStudio _Build_ window.
-The button's drop-down list allows you to create all documents or limit yourself to one format.
-
+For any questions related to this project, you can contact <marie.simonin@inrae.fr> and/or <tristan.lafontrapnouil@gmail.com>. 
 <!-- The \mainmatter command marks the beginning of the LaTeX document body--> 
 <!-- It must not be deleted-->
 \mainmatter

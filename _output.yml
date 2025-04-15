@@ -16,7 +16,7 @@ bookdown::gitbook:
       github: yes
     toc:
       before: |
-        <li><a href="./">Title of the Memoir</a></li>
+        <li><a href="./">Inherseed's wiki</a></li>
       after: |
         <li><a href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki" target="blank">Published with bookdown</a></li>
     download: "pdf"

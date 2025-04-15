@@ -1,91 +1,222 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xml:lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>3 Syntax | Memoir Template</title>
-<meta name="author" content="Authors’ names">
-<meta name="description" content="Deliver the take-home message here. It can contain several paragraphs. The syntax of R Mardown extended by Bookdown is recalled here. In RStudio, create a new document of type Document R Markdown....">
-<meta name="generator" content="bookdown 0.42 with bs4_book()">
-<meta property="og:title" content="3 Syntax | Memoir Template">
-<meta property="og:type" content="book">
-<meta property="og:url" content="https://GitHubID.github.io/Repository/syntax.html">
-<meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png">
-<meta property="og:description" content="Deliver the take-home message here. It can contain several paragraphs. The syntax of R Mardown extended by Bookdown is recalled here. In RStudio, create a new document of type Document R Markdown....">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3 Syntax | Memoir Template">
-<meta name="twitter:description" content="Deliver the take-home message here. It can contain several paragraphs. The syntax of R Mardown extended by Bookdown is recalled here. In RStudio, create a new document of type Document R Markdown....">
-<meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
-    
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  </style>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Syntax | Memoir Template</title>
+  <meta name="description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Syntax | Memoir Template" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+  <meta property="og:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="github-repo" content="GitHubID/Repository" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Syntax | Memoir Template" />
+  
+  <meta name="twitter:description" content="Bookdown template based on LaTeX memoir class" />
+  <meta name="twitter:image" content="https://GitHubID.github.io/Repository/images/logo.png" />
+
+<meta name="author" content="Tristan Lafont Rapnouil, Mathilde Brunel &amp; Marie Simonin" />
+
+
+<meta name="date" content="2025-04-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="getting_started.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
 <style type="text/css">
-    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-          margin-bottom: 0em;
-        }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
-  </style>
-<link rel="stylesheet" href="bs4_style.css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body data-spy="scroll" data-target="#toc">
 
-<div class="container-fluid">
-<div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<body>
 
-    <div class="d-flex align-items-start justify-content-between">
-      <h1>
-        <a href="index.html" title="">Memoir Template</a>
-      </h1>
-      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
-    </div>
 
-    <div id="main-nav" class="collapse-lg">
-      <form role="search">
-        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">Introduction</a></li>
-<li><a class="" href="data-framework.html"><span class="header-section-number">1</span> Data framework</a></li>
-<li><a class="" href="getting_started.html"><span class="header-section-number">2</span> Getting Started</a></li>
-<li><a class="active" href="syntax.html"><span class="header-section-number">3</span> Syntax</a></li>
-<li><a class="" href="references.html">References</a></li>
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Inherseed's wiki</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="data-framework.html"><a href="data-framework.html"><i class="fa fa-check"></i><b>1</b> Data framework</a></li>
+<li class="chapter" data-level="2" data-path="getting_started.html"><a href="getting_started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="getting_started.html"><a href="getting_started.html#index"><i class="fa fa-check"></i><b>2.1</b> index.Rmd</a></li>
+<li class="chapter" data-level="2.2" data-path="getting_started.html"><a href="getting_started.html#bookdown.yml"><i class="fa fa-check"></i><b>2.2</b> _bookdown.yml</a></li>
+<li class="chapter" data-level="2.3" data-path="getting_started.html"><a href="getting_started.html#output.yml"><i class="fa fa-check"></i><b>2.3</b> _output.yml</a></li>
+<li class="chapter" data-level="2.4" data-path="getting_started.html"><a href="getting_started.html#multilingual-documents"><i class="fa fa-check"></i><b>2.4</b> Multilingual documents</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="syntax.html"><a href="syntax.html"><i class="fa fa-check"></i><b>3</b> Syntax</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="syntax.html"><a href="syntax.html#write"><i class="fa fa-check"></i><b>3.1</b> Write</a></li>
+<li class="chapter" data-level="3.2" data-path="syntax.html"><a href="syntax.html#r-code"><i class="fa fa-check"></i><b>3.2</b> R code</a></li>
+<li class="chapter" data-level="3.3" data-path="syntax.html"><a href="syntax.html#figures"><i class="fa fa-check"></i><b>3.3</b> Figures</a></li>
+<li class="chapter" data-level="3.4" data-path="syntax.html"><a href="syntax.html#tables"><i class="fa fa-check"></i><b>3.4</b> Tables</a></li>
+<li class="chapter" data-level="3.5" data-path="syntax.html"><a href="syntax.html#maths"><i class="fa fa-check"></i><b>3.5</b> Maths</a></li>
+<li class="chapter" data-level="3.6" data-path="syntax.html"><a href="syntax.html#cross-references"><i class="fa fa-check"></i><b>3.6</b> Cross-references</a></li>
+<li class="chapter" data-level="3.7" data-path="syntax.html"><a href="syntax.html#bibliography"><i class="fa fa-check"></i><b>3.7</b> Bibliography</a></li>
+<li class="chapter" data-level="3.8" data-path="syntax.html"><a href="syntax.html#forcing-line-breaks"><i class="fa fa-check"></i><b>3.8</b> Forcing line breaks</a></li>
+<li class="chapter" data-level="3.9" data-path="syntax.html"><a href="syntax.html#sec:languages"><i class="fa fa-check"></i><b>3.9</b> Languages</a></li>
+<li class="chapter" data-level="3.10" data-path="syntax.html"><a href="syntax.html#chapter-summary"><i class="fa fa-check"></i><b>3.10</b> Chapter summary</a></li>
+<li class="chapter" data-level="3.11" data-path="syntax.html"><a href="syntax.html#local-table-of-contents"><i class="fa fa-check"></i><b>3.11</b> Local table of contents</a></li>
+<li class="chapter" data-level="3.12" data-path="syntax.html"><a href="syntax.html#boxed-text"><i class="fa fa-check"></i><b>3.12</b> Boxed text</a></li>
+<li class="chapter" data-level="3.13" data-path="syntax.html"><a href="syntax.html#documentation"><i class="fa fa-check"></i><b>3.13</b> Documentation</a>
+<ul>
+<li class="chapter" data-level="3.13.1" data-path="syntax.html"><a href="syntax.html#user-documentation"><i class="fa fa-check"></i><b>3.13.1</b> User documentation</a></li>
+<li class="chapter" data-level="3.13.2" data-path="syntax.html"><a href="syntax.html#documentation-for-developers"><i class="fa fa-check"></i><b>3.13.2</b> Documentation for developers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki" target="blank">Published with bookdown</a></li>
+
 </ul>
 
-        <div class="book-extra">
-          <p><a id="book-repo" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki">View book source <i class="fab fa-github"></i></a></p>
-        </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="syntax" class="section level1" number="3">
-<h1>
-<span class="header-section-number">3</span> Syntax<a class="anchor" aria-label="anchor" href="#syntax"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Memoir Template</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="syntax" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Syntax<a href="syntax.html#syntax" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="Summary">
 <p>Deliver the take-home message here.</p>
 <p>It can contain several paragraphs.</p>
@@ -109,12 +240,10 @@ The <code>index.Rmd</code> file is special: it contains the document header and 
 <pre><code># (APPENDIX) Appendix {-} 
 
 # Title of the first appendix</code></pre>
-<div id="write" class="section level2" number="3.1">
-<h2>
-<span class="header-section-number">3.1</span> Write<a class="anchor" aria-label="anchor" href="#write"><i class="fas fa-link"></i></a>
-</h2>
+<div id="write" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Write<a href="syntax.html#write" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The main features of Markdown are summarized here.
-A quick and complete training is offered by RStudio<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri"&gt;https://rmarkdown.rstudio.com/lesson-1.html&lt;/a&gt;&lt;/p&gt;'><sup>3</sup></a>.</p>
+A quick and complete training is offered by RStudio<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
 <p>The text is written without any formatting other than line breaks.
 A simple line break has no effect on the document produced: it allows to separate sentences to simplify the tracking of the source code by git.</p>
 <p>A line break marks a paragraph change.</p>
@@ -126,10 +255,8 @@ Indented lists are created by inserting 4 spaces before the dash at the beginnin
 Last, numbered lists are created in the same way by replacing the hyphens by numbers, whose value does not matter.</p>
 <p>In the text, the italicized parts are surrounded by a star or an underscore (<code>*italic*</code>), while two stars mark the bold.</p>
 </div>
-<div id="r-code" class="section level2" number="3.2">
-<h2>
-<span class="header-section-number">3.2</span> R code<a class="anchor" aria-label="anchor" href="#r-code"><i class="fas fa-link"></i></a>
-</h2>
+<div id="r-code" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> R code<a href="syntax.html#r-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R code is included in code chunks (<em>code chunks</em>) that are easily created by clicking on the “Insert a new code chunk” button above the source code window in RStudio.
 They start and end with three quotation marks on a new line.
 These code chunks can contain R code but also Python code for example: the type of code is indicated in the header on the first line, before the name of the code chunk, then a comma separated list of options, for example:</p>
@@ -140,32 +267,25 @@ These code chunks can contain R code but also Python code for example: the type 
 <p>The name and options are optional: the minimum header is <code>{r}</code>.</p>
 <p>The most useful options are:</p>
 <ul>
-<li>
-<code>echo</code> to show (<code>=TRUE</code>) or hide (<code>=FALSE</code>) the code.</li>
-<li>
-<code>message=FALSE</code> to hide the opening messages of some packages.</li>
-<li>
-<code>warning=FALSE</code> to hide warnings.</li>
+<li><code>echo</code> to show (<code>=TRUE</code>) or hide (<code>=FALSE</code>) the code.</li>
+<li><code>message=FALSE</code> to hide the opening messages of some packages.</li>
+<li><code>warning=FALSE</code> to hide warnings.</li>
 </ul>
 <p>The default options are declared in the code snippet named “Options” at the beginning of the Markdown document, in the <code>opts_chunk$set()</code> function.
 The <code>echo</code> option should be set to <code>FALSE</code> by default for a scientific article for example.</p>
 <p>When it is <code>TRUE</code>, the code is printed as follows</p>
 <p></p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fl">2</span> <span class="op">+</span> <span class="fl">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="syntax.html#cb11-1" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 4</code></pre>
 <p></p>
 </div>
-<div id="figures" class="section level2" number="3.3">
-<h2>
-<span class="header-section-number">3.3</span> Figures<a class="anchor" aria-label="anchor" href="#figures"><i class="fas fa-link"></i></a>
-</h2>
+<div id="figures" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Figures<a href="syntax.html#figures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p></p>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">pressure</span><span class="op">)</span></span></code></pre></div>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:pressure"></span>
-<img src="Wiki_INHERSEED_files/figure-html/pressure-1.png" alt="A figure" width="80%"><p class="caption">
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="syntax.html#cb13-1" tabindex="-1"></a><span class="fu">plot</span>(pressure)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pressure"></span>
+<img src="Wiki_INHERSEED_files/figure-html/pressure-1.png" alt="A figure" width="80%" />
+<p class="caption">
 Figure 3.1: A figure
 </p>
 </div>
@@ -176,7 +296,7 @@ References are made with the command <code>\@ref(fig:xxx)</code>.</p>
 <p>The header of the code snippet of the figure <a href="syntax.html#fig:pressure">3.1</a> is:</p>
 <pre><code>```{r}
 #| label: pressure
-#| fig-cap: "Title of the figure"
+#| fig-cap: &quot;Title of the figure&quot;
 ```</code></pre>
 <p>It contains at least the name of the figure and its caption.</p>
 <p>The default width of figures is set in the option chunk in <code>index.Rmd</code>.
@@ -194,9 +314,9 @@ For more elaborate captions, it is possible to declare the caption in a separate
 The figure <a href="syntax.html#fig:pressure2">3.2</a> benefits from an improved caption.</p>
 
 <p></p>
-<div class="figure" style="text-align: center">
-<span style="display:block;" id="fig:pressure2"></span>
-<img src="Wiki_INHERSEED_files/figure-html/pressure2-1.png" alt="Title with italic, math (\(\sqrt\pi\)) and reference to figure 3.1" width="80%"><p class="caption">
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pressure2"></span>
+<img src="Wiki_INHERSEED_files/figure-html/pressure2-1.png" alt="Title with italic, math (\(\sqrt\pi\)) and reference to figure 3.1" width="80%" />
+<p class="caption">
 Figure 3.2: Title with <em>italic</em>, math (<span class="math inline">\(\sqrt\pi\)</span>) and reference to figure <a href="syntax.html#fig:pressure">3.1</a>
 </p>
 </div>
@@ -207,27 +327,25 @@ They should not contain bibliographic references or references to the figures ma
 <p>Figures that are not created by R but come from files are embedded in a piece of code by the <code>include_graphics()</code> function whose argument is the file containing the image to be displayed.
 Always place these files in the <code>images</code> folder for good organization.</p>
 </div>
-<div id="tables" class="section level2" number="3.4">
-<h2>
-<span class="header-section-number">3.4</span> Tables<a class="anchor" aria-label="anchor" href="#tables"><i class="fas fa-link"></i></a>
-</h2>
+<div id="tables" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Tables<a href="syntax.html#tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The horizontal <code>-</code> and vertical separators <code>|</code> allow you to draw a table according to Markdown syntax, but this is not the best method.</p>
 <p>Tables can also be produced by R code.
 The content of the table is in a dataframe.
 The <code>kbl()</code> function in the <em>kableExtra</em> package (which enhances the original <code>kable()</code> function from <em>knitr</em>) prepares the table for display and passes the result to the <code>kable_styling</code> function for final formatting.</p>
 <p></p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Sepal length"</span>, <span class="st">"Width"</span>, <span class="st">"Petal length"</span>, <span class="st">"Width"</span>,</span>
-<span>    <span class="st">"Species"</span><span class="op">)</span></span>
-<span><span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kbl.html">kbl</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span>, caption <span class="op">=</span> <span class="st">"Table created by R"</span>, longtable <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span>    booktabs <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">kableExtra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/kableExtra/man/kable_styling.html">kable_styling</a></span><span class="op">(</span>bootstrap_options <span class="op">=</span> <span class="st">"striped"</span>,</span>
-<span>        full_width <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-table"><table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="syntax.html#cb15-1" tabindex="-1"></a><span class="fu">names</span>(iris) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Sepal length&quot;</span>, <span class="st">&quot;Width&quot;</span>, <span class="st">&quot;Petal length&quot;</span>, <span class="st">&quot;Width&quot;</span>,</span>
+<span id="cb15-2"><a href="syntax.html#cb15-2" tabindex="-1"></a>    <span class="st">&quot;Species&quot;</span>)</span>
+<span id="cb15-3"><a href="syntax.html#cb15-3" tabindex="-1"></a>kableExtra<span class="sc">::</span><span class="fu">kbl</span>(<span class="fu">head</span>(iris), <span class="at">caption =</span> <span class="st">&quot;Table created by R&quot;</span>, <span class="at">longtable =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb15-4"><a href="syntax.html#cb15-4" tabindex="-1"></a>    <span class="at">booktabs =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="syntax.html#cb15-5" tabindex="-1"></a>    kableExtra<span class="sc">::</span><span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="st">&quot;striped&quot;</span>,</span>
+<span id="cb15-6"><a href="syntax.html#cb15-6" tabindex="-1"></a>        <span class="at">full_width =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:kable">Table 3.1: </span>Table created by R
 </caption>
-<thead><tr>
+<thead>
+<tr>
 <th style="text-align:right;">
 Sepal length
 </th>
@@ -243,7 +361,8 @@ Width
 <th style="text-align:left;">
 Species
 </th>
-</tr></thead>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:right;">
@@ -348,18 +467,19 @@ setosa
 </td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <p></p>
 <p>The caption is specified by the <code>caption</code> argument and referencing is possible because the table receives a label whose name is <code>tab:</code> followed by the name of the code snippet (table <a href="syntax.html#tab:kable">3.1</a>).
 Always use the <code>booktabs = TRUE</code> argument so that the thickness of the separator lines is optimal in LaTeX.
 The <code>bootstrap_options = "striped"</code> option provides more readable tables in HTML.</p>
 
 <p></p>
-<div class="inline-table"><table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:Paracou">Table 3.2: </span>Disturbance intensity of the 4 plot treatments in Paracou.
 </caption>
-<thead><tr>
+<thead>
+<tr>
 <th style="text-align:left;font-weight: bold;">
 Treatment
 </th>
@@ -375,7 +495,8 @@ Fuelwood
 <th style="text-align:left;font-weight: bold;">
 %AGB lost
 </th>
-</tr></thead>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
@@ -440,7 +561,7 @@ DBH <span class="math inline">\(\geq\)</span> 50 cm, non-valuable species, <span
 </td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <p></p>
 <p>In LaTeX, tables can have the width of the column and possibly span multiple pages (<code>longtable = TRUE</code>), or use the width of the page (<code>longtable = FALSE</code>), like table <a href="syntax.html#tab:Paracou">3.2</a>.</p>
 <p>This table contains mathematics: the <code>escape = FALSE</code> option is necessary.</p>
@@ -450,10 +571,8 @@ It must be <code>TRUE</code> for correct formatting of two-column tables, i.e. 
 See <em>kableExtra</em>’s documentation to format rows or columns globally without using Markdown (e.g. function <code>row_spec()</code>.
 The header of <a href="syntax.html#tab:Paracou">3.2</a>) is set to bold this way.</p>
 </div>
-<div id="maths" class="section level2" number="3.5">
-<h2>
-<span class="header-section-number">3.5</span> Maths<a class="anchor" aria-label="anchor" href="#maths"><i class="fas fa-link"></i></a>
-</h2>
+<div id="maths" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Maths<a href="syntax.html#maths" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Equations in LaTeX format can be inserted in line, like <span class="math inline">\(A=\pi r^2\)</span> (code: <code>$A=\pi r^2$</code>) or isolated (the $ are doubled) like <span class="math display">\[e^{i \pi} = -1.\]</span></p>
 <p>They can be numbered: see equation <a href="syntax.html#eq:disk">(3.1)</a>, using the <code>\equation</code> environment.</p>
 <p><span class="math display" id="eq:disk">\[\begin{equation}
@@ -466,44 +585,36 @@ The header of <a href="syntax.html#tab:Paracou">3.2</a>) is set to bold this way
   (\#eq:disk)
 \end{equation}</code></pre>
 </div>
-<div id="cross-references" class="section level2" number="3.6">
-<h2>
-<span class="header-section-number">3.6</span> Cross-references<a class="anchor" aria-label="anchor" href="#cross-references"><i class="fas fa-link"></i></a>
-</h2>
+<div id="cross-references" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Cross-references<a href="syntax.html#cross-references" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Figures and tables have an automatically generated label, identical to the name of the code snippet prefixed with <code>fig:</code> and <code>tab:</code>.</p>
 <p>For equations, the label is added manually by the code <code>(\#eq:xxx)</code> before the end of the equation.</p>
 <p>Sections can be tagged by ending their title with <code>{#yyy}</code>.</p>
 <p>In all cases, the call to the reference is made by the command <code>\@ref()</code>.</p>
 </div>
-<div id="bibliography" class="section level2" number="3.7">
-<h2>
-<span class="header-section-number">3.7</span> Bibliography<a class="anchor" aria-label="anchor" href="#bibliography"><i class="fas fa-link"></i></a>
-</h2>
+<div id="bibliography" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Bibliography<a href="syntax.html#bibliography" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Bibliographic references in bibtex format must be included in the <code>.bib</code> file declared in the header of the Markdown document.</p>
 <pre><code>bibliography: references.bib</code></pre>
-<p>They can be called in the text, between brackets by the code <code>[@CitationKey]</code>, as sidenotes <span class="citation">(<a href="references.html#ref-Xie2016">Xie 2016</a>)</span>, or without square brackets, to include the authors’ names in the text, such as <span class="citation">Xie, Allaire, and Grolemund (<a href="references.html#ref-Xie2018">2018</a>)</span> .</p>
+<p>They can be called in the text, between brackets by the code <code>[@CitationKey]</code>, as sidenotes <span class="citation">(<a href="#ref-Xie2016">Xie 2016</a>)</span>, or without square brackets, to include the authors’ names in the text, such as <span class="citation">Xie, Allaire, and Grolemund (<a href="#ref-Xie2018">2018</a>)</span> .</p>
 <p>Bibliography is handled by pandoc when producing Word or HTML documents.
 The bibliographic style can be specified, by adding the line</p>
 <pre><code>csl:file_name.csl</code></pre>
 <p>in the document header and copying the <em>.csl</em> style file into the project folder.
 The default style (if no csl is specified) is “chicago-author-date”.
-Several thousand styles are available <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://github.com/citation-style-language/styles" class="uri"&gt;https://github.com/citation-style-language/styles&lt;/a&gt;&lt;/p&gt;'><sup>4</sup></a>.</p>
+Several thousand styles are available <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>.</p>
 <p>For PDF documents, the bibliography is handled by BibLaTeX, see section <a href="getting_started.html#index">2.1</a>.</p>
 </div>
-<div id="forcing-line-breaks" class="section level2" number="3.8">
-<h2>
-<span class="header-section-number">3.8</span> Forcing line breaks<a class="anchor" aria-label="anchor" href="#forcing-line-breaks"><i class="fas fa-link"></i></a>
-</h2>
+<div id="forcing-line-breaks" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> Forcing line breaks<a href="syntax.html#forcing-line-breaks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hyphenation is handled automatically in LaTeX.
 If a word is not hyphenated correctly, add its hyphenation in the preamble of the file with the command <code>hyphenation</code> (words are separated by spaces, hyphenation locations are represented by dashes).</p>
 <p>If LaTeX can’t find a solution for the line break, for example because some code is too long a non-breaking block, add the LaTeX command <code>\break</code> to the line break location.
 Do not leave a space before the command.
 The HTML document ignores LaTeX commands.</p>
 </div>
-<div id="sec:languages" class="section level2" number="3.9">
-<h2>
-<span class="header-section-number">3.9</span> Languages<a class="anchor" aria-label="anchor" href="#sec:languages"><i class="fas fa-link"></i></a>
-</h2>
+<div id="sec:languages" class="section level2 hasAnchor" number="3.9">
+<h2><span class="header-section-number">3.9</span> Languages<a href="syntax.html#sec:languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Languages are declared in the document header.</p>
 <p>The main language of the document (<code>lang</code>) changes the name of some elements, such as the table of contents.
 The change of language in the document (one of <code>otherlangs</code>) is managed in LaTeX but not in HTML by inserting on a new line the following command:</p>
@@ -511,35 +622,29 @@ The change of language in the document (one of <code>otherlangs</code>) is manag
 <p>The current language has an effect only in LaTeX output: a space is added before double punctuation in French, the size of spaces is larger at the beginning of sentences in English, etc.
 The <code>\selectlanguage</code> command is simply ignored in HTML.</p>
 <p>Language codes are used in the header, such as <code>en-US</code> but language names are necessary in <code>\selectlanguage{}</code>.
-Name matches are listed in table 3 of the polyglossia package documentation<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="http://mirrors.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf" class="uri"&gt;http://mirrors.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf&lt;/a&gt;&lt;/p&gt;'><sup>5</sup></a>.</p>
+Name matches are listed in table 3 of the polyglossia package documentation<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</p>
 </div>
-<div id="chapter-summary" class="section level2" number="3.10">
-<h2>
-<span class="header-section-number">3.10</span> Chapter summary<a class="anchor" aria-label="anchor" href="#chapter-summary"><i class="fas fa-link"></i></a>
-</h2>
+<div id="chapter-summary" class="section level2 hasAnchor" number="3.10">
+<h2><span class="header-section-number">3.10</span> Chapter summary<a href="syntax.html#chapter-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The take-home message of each chapter can be displayed in a box, see the beginning of this one.
 The code is that of a code block of type “Summary”.</p>
-<pre><code>::: {.Summary data-latex=""}
+<pre><code>::: {.Summary data-latex=&quot;&quot;}
 Some text for this block.
 :::</code></pre>
 <p>Its heading text is set in the header of <code>index.Rmd</code>:</p>
 <pre><code>chaptersummary: In a Nutshell</code></pre>
 <p>Note that the chapter summaries are formatted as simple text in Word outputs.</p>
 </div>
-<div id="local-table-of-contents" class="section level2" number="3.11">
-<h2>
-<span class="header-section-number">3.11</span> Local table of contents<a class="anchor" aria-label="anchor" href="#local-table-of-contents"><i class="fas fa-link"></i></a>
-</h2>
+<div id="local-table-of-contents" class="section level2 hasAnchor" number="3.11">
+<h2><span class="header-section-number">3.11</span> Local table of contents<a href="syntax.html#local-table-of-contents" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>At the beginning of each chapter of the PDF document, a local table of content can be added with the following code:</p>
 <pre><code>\toc{1}</code></pre>
 <p>It is ignored in HTML.
 1 is the depth of the table of contents: sections of the chapters are included.
 It can be changed for 2 to display subsections too, and so on.</p>
 </div>
-<div id="boxed-text" class="section level2" number="3.12">
-<h2>
-<span class="header-section-number">3.12</span> Boxed text<a class="anchor" aria-label="anchor" href="#boxed-text"><i class="fas fa-link"></i></a>
-</h2>
+<div id="boxed-text" class="section level2 hasAnchor" number="3.12">
+<h2><span class="header-section-number">3.12</span> Boxed text<a href="syntax.html#boxed-text" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Boxed text allows summarizing important points out of the main text.
 An example is given here, to define the Pythagorean theorem.</p>
 
@@ -549,8 +654,8 @@ and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</
 <p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
 </div>
 <p>These boxes are included in the document as fenced blocks, whose syntax is as follows:</p>
-<pre><code>:::{#pythbox .greybox data-latex='[frametitle=Pythagorean theorem]'
-title='Pythagorean theorem'}
+<pre><code>:::{#pythbox .greybox data-latex=&#39;[frametitle=Pythagorean theorem]&#39;
+title=&#39;Pythagorean theorem&#39;}
 For a right triangle, if $c$ denotes the length of the hypotenuse
 and $a$ and $b$ denote the lengths of the other two sides, we have
 
@@ -567,7 +672,7 @@ Note the particular syntax of the title in the PDF output.</p>
 <p>Grey text boxes (<code>.greybox</code>) are provided by the memoir template.
 Advanced users can define other colored boxes, say a yellow box, following the next steps:</p>
 <ul>
-<li>Obtain the HTML code of the color, for instance with a color picker<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www.w3schools.com/colors/colors_picker.asp" class="uri"&gt;https://www.w3schools.com/colors/colors_picker.asp&lt;/a&gt;&lt;/p&gt;'><sup>6</sup></a>. <code>ffff66</code> is suitable for yellow.</li>
+<li>Obtain the HTML code of the color, for instance with a color picker<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. <code>ffff66</code> is suitable for yellow.</li>
 <li>In <code>latex/preamble.tex</code>, define the color by adding the following line below the definition of the grey color:</li>
 </ul>
 <pre><code>\definecolor{yellow}{HTML}{FFFF66}</code></pre>
@@ -586,84 +691,106 @@ Replace <code>.greybox</code> with <code>.yellowbox</code> everywhere, “Grey�
 <li>In the text, use the same syntax as above but declare the class of the fenced block as <code>.yellowbox</code> instead of <code>.greybox</code>.</li>
 </ul>
 </div>
-<div id="documentation" class="section level2" number="3.13">
-<h2>
-<span class="header-section-number">3.13</span> Documentation<a class="anchor" aria-label="anchor" href="#documentation"><i class="fas fa-link"></i></a>
-</h2>
-<div id="user-documentation" class="section level3" number="3.13.1">
-<h3>
-<span class="header-section-number">3.13.1</span> User documentation<a class="anchor" aria-label="anchor" href="#user-documentation"><i class="fas fa-link"></i></a>
-</h3>
+<div id="documentation" class="section level2 hasAnchor" number="3.13">
+<h2><span class="header-section-number">3.13</span> Documentation<a href="syntax.html#documentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="user-documentation" class="section level3 hasAnchor" number="3.13.1">
+<h3><span class="header-section-number">3.13.1</span> User documentation<a href="syntax.html#user-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>The book <a href="https://bookdown.org/yihui/bookdown/">bookdown: Authoring Books and Technical Documents with R Markdown</a> by Yihui Xie, the author of <strong>bookdown</strong> and <strong>knitr</strong>.
 All the necessary details for writing (writing equations, cross-references, etc.) are given.</li>
 <li>The <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R Markdown cheat sheet</a> for the syntax.</li>
 </ul>
 </div>
-<div id="documentation-for-developers" class="section level3" number="3.13.2">
-<h3>
-<span class="header-section-number">3.13.2</span> Documentation for developers<a class="anchor" aria-label="anchor" href="#documentation-for-developers"><i class="fas fa-link"></i></a>
-</h3>
+<div id="documentation-for-developers" class="section level3 hasAnchor" number="3.13.2">
+<h3><span class="header-section-number">3.13.2</span> Documentation for developers<a href="syntax.html#documentation-for-developers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>
-<a href="http://rmarkdown.rstudio.com/pdf_document_format.html#advanced_customization">LaTeX file format customization</a>.</li>
+<li><a href="http://rmarkdown.rstudio.com/pdf_document_format.html#advanced_customization">LaTeX file format customization</a>.</li>
 <li>The <a href="https://pandoc.org/MANUAL.html">Pandoc manual</a> for possible options in the YAML header.</li>
 </ul>
-</div>
-</div>
-</div>
-
-  <div class="chapter-nav">
-<div class="prev"><a href="getting_started.html"><span class="header-section-number">2</span> Getting Started</a></div>
-<div class="next"><a href="references.html">References</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#syntax"><span class="header-section-number">3</span> Syntax</a></li>
-<li><a class="nav-link" href="#write"><span class="header-section-number">3.1</span> Write</a></li>
-<li><a class="nav-link" href="#r-code"><span class="header-section-number">3.2</span> R code</a></li>
-<li><a class="nav-link" href="#figures"><span class="header-section-number">3.3</span> Figures</a></li>
-<li><a class="nav-link" href="#tables"><span class="header-section-number">3.4</span> Tables</a></li>
-<li><a class="nav-link" href="#maths"><span class="header-section-number">3.5</span> Maths</a></li>
-<li><a class="nav-link" href="#cross-references"><span class="header-section-number">3.6</span> Cross-references</a></li>
-<li><a class="nav-link" href="#bibliography"><span class="header-section-number">3.7</span> Bibliography</a></li>
-<li><a class="nav-link" href="#forcing-line-breaks"><span class="header-section-number">3.8</span> Forcing line breaks</a></li>
-<li><a class="nav-link" href="#sec:languages"><span class="header-section-number">3.9</span> Languages</a></li>
-<li><a class="nav-link" href="#chapter-summary"><span class="header-section-number">3.10</span> Chapter summary</a></li>
-<li><a class="nav-link" href="#local-table-of-contents"><span class="header-section-number">3.11</span> Local table of contents</a></li>
-<li><a class="nav-link" href="#boxed-text"><span class="header-section-number">3.12</span> Boxed text</a></li>
-<li>
-<a class="nav-link" href="#documentation"><span class="header-section-number">3.13</span> Documentation</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#user-documentation"><span class="header-section-number">3.13.1</span> User documentation</a></li>
-<li><a class="nav-link" href="#documentation-for-developers"><span class="header-section-number">3.13.2</span> Documentation for developers</a></li>
-</ul>
-</li>
-</ul>
-
-      <div class="book-extra">
-        <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki/blob/master/82-syntax.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/LafontRapnouilTristan/INHERSEED_wiki/edit/master/82-syntax.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
-        </ul>
-</div>
-    </nav>
-</div>
 
 </div>
-</div> <!-- .container -->
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-Xie2016" class="csl-entry">
+Xie, Yihui. 2016. <em>Bookdown: Authoring Books and Technical Documents with <span>R</span> Markdown</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://github.com/rstudio/bookdown">https://github.com/rstudio/bookdown</a>.
+</div>
+<div id="ref-Xie2018" class="csl-entry">
+Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p><a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a><a href="syntax.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://github.com/citation-style-language/styles" class="uri">https://github.com/citation-style-language/styles</a><a href="syntax.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p><a href="http://mirrors.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf" class="uri">http://mirrors.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf</a><a href="syntax.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p><a href="https://www.w3schools.com/colors/colors_picker.asp" class="uri">https://www.w3schools.com/colors/colors_picker.asp</a><a href="syntax.html#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
-
-  <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Memoir Template</strong>" was written by Authors’ names. It was last built on 2025-04-14.</p>
+          </div>
+        </div>
+      </div>
+<a href="getting_started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
   </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["Wiki_INHERSEED.pdf"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
 
-  <div class="col-12 col-md-6 mt-3">
-    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
-  </div>
-
-</div></div>
-</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -675,22 +802,7 @@ All the necessary details for writing (writing equations, cross-references, etc.
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
-</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
-for (let popover of popovers) {
-  const div = document.createElement('div');
-  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
-  div.innerHTML = popover.getAttribute('data-content');
-
-  var has_math = div.querySelector("span.math");
-  if (has_math) {
-    document.body.appendChild(div);
-    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
-    MathJax.Hub.Queue(function() {
-      popover.setAttribute('data-content', div.innerHTML);
-      document.body.removeChild(div);
-    })
-  }
-}
 </script>
 </body>
+
 </html>

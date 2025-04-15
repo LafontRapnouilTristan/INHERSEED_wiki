@@ -375,7 +375,7 @@
 \usepackage{hyperref}
 \hypersetup{
   pdftitle={Memoir Template},
-  pdfauthor={Authors' names},
+  pdfauthor={Tristan Lafont Rapnouil, Mathilde Brunel \& Marie Simonin},
   colorlinks=true,
   linkcolor=Maroon,
   citecolor=Blue,
@@ -391,9 +391,9 @@
 
 \title{Memoir Template}
 
-\author{Authors' names}
+\author{Tristan Lafont Rapnouil, Mathilde Brunel \& Marie Simonin}
 
-\date{2025-04-14}
+\date{2025-04-15}
 
 
 % Include headers (preamble.tex) here
@@ -478,45 +478,19 @@ Leave an empty line for line breaks.}
 \chapter*{Introduction}\label{introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-This document allows you to create a book in PDF format (and ePub format) at the same time as an HTML version to be published on the web.
-The syntax is that of \textbf{Markdown} with some extensions.
+Plant microbial INHERitance across generations through SEEDs: impact of this primary inoculum on plant fitness and microbiota assembly
 
-The \textbf{bookdown} package must be installed from CRAN or GitHub:
+This document acts as a wiki-like platform regarding all protocols and data treatment within the INHERSEED project. The project is lead by Marie Simonin (PI - INSERT WEBSITE), Tristan Lafont Rapnouil is a post-doc in charge of monitoring the project progress and data acquisition and, Mathilde Brunel is a technician involved in greenhouse managing and wetlab experimentations.
 
-\scriptsize
+While not all data and protocols can be hosted on Github, links to where they are actually findable are persented in this document.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github(\textquotesingle{}rstudio/bookdown\textquotesingle{})}
-\end{Highlighting}
-\end{Shaded}
-
-\normalsize
-
-The book is organized in chapters.
-Each chapter is an Rmd file, whose name normally begins with its number (e.g.~\texttt{01-intro.Rmd}).
-All Rmd files in the project folder are actually treated as chapters, sorted by filename.
-The index.Rmd file is special: it contains the document header and the first chapter.
-
-This first chapter is placed in the foreword of the printed book: it should not be numbered (hence the \texttt{\{-\}} code next to the title) in the HTML version.
-It must end with the LaTeX command \texttt{\textbackslash{}mainmatter} which marks the beginning of the body of the book.
-
-The outline levels start with \texttt{\#} for chapters (only one per file), \texttt{\#\#} for sections, etc.
-
-Compilation in PDF format is done by XeLaTeX, which must be installed.
-
-While writing, it is strongly advised to create only the HTML file, which is much faster than a LaTeX compilation.
-Each chapter can be viewed very quickly by clicking on the \emph{Knit} button above the source window.
-The entire book is created by clicking on the \emph{Build Book} button in the RStudio \emph{Build} window.
-The button's drop-down list allows you to create all documents or limit yourself to one format.
-
+For any questions related to this project, you can contact \href{mailto:marie.simonin@inrae.fr}{\nolinkurl{marie.simonin@inrae.fr}} and/or \href{mailto:tristan.lafontrapnouil@gmail.com}{\nolinkurl{tristan.lafontrapnouil@gmail.com}}.
 \mainmatter
 
 \chapter{Data framework}\label{data-framework}
 
-INHERSEED aims to respect the FAIR principles for open science. To do so we share in the present document protocols, raw data, processing scripts/procedures and, processed data as used in resulting articles \ref{fig:dframework}.
+INHERSEED aims to respect the FAIR principles for open science.
+To do so we share in the present document protocols, raw data, processing scripts/procedures and, processed data as used in resulting articles \ref{fig:dframework}.
 
 \scriptsize
 
@@ -531,23 +505,93 @@ INHERSEED aims to respect the FAIR principles for open science. To do so we shar
 
 \normalsize
 
-To ensure reproducibility data standard processing (bioinformatic pipeline and diagnostics) were embbeded in snakemake pipeline. R session info were also stored as text files available here.
+To ensure reproducibility data standard processing (bioinformatic pipeline and diagnostics) were embbeded in snakemake pipeline.
+R session info were also stored as text files available \href{}{here}.
+The Data Management Plan is hosted \href{}{here}.
+
+Deliverables of the project are:
+
+\begin{itemize}
+\tightlist
+\item
+  Data, protocols and workflows:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    github hosted document (Text)
+  \item
+    Metabarcoding dataset: amplicon sequencing dataset as .fastq for 16s and ITS markers. (Dataset)
+  \item
+    Processing scripts and pipelines (Python, Bash and R). (Workflow)
+  \item
+    Protocols for all data acquisition (Text)
+  \end{itemize}
+\item
+  Results:
+  \textbf{WP1}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Plant taxonomy and traits influence on seed microbiota
+  \item
+    Assessment of microbial transmission from plants to seeds
+  \item
+    Exploring phylosymbiosis on seed microbiota
+    \textbf{WP2}:
+  \item
+    Evaluation of microbial transmission from seeds to seedlings
+  \item
+    Inherited and non-inherited taxa transmission success
+  \item
+    Exploring phylosymbiosis on seedling microbiota
+  \end{itemize}
+\end{itemize}
 
 \#links to data info
 
-{[}Project proposal{]}
-{[}Original seeds sources{]}
-{[}species list{]}
-{[}suppliers{]}
-{[}Seed phenotype{]}
-{[}Seed pictures{]}
-{[}TRAITOR software{]}
-{[}DNA extractions{]}
-{[}Seeds{]}
-{[}Leaves{]}
-{[}Roots{]}
-{[}Soil{]}
-{[}Plant phenotype{]}
+\begin{itemize}
+\tightlist
+\item
+  \href{document/full_proposal/aapg_20203-INHERSEED_full_proposal.pdf}{Project proposal}
+\item
+  {[}Original seeds sources{]}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    {[}species list{]}
+  \item
+    {[}suppliers{]}
+  \end{itemize}
+\item
+  {[}Seed phenotype{]}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    {[}Seed pictures{]}
+  \item
+    {[}TRAITOR software{]}
+  \end{itemize}
+\item
+  {[}DNA extractions{]}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    {[}Seeds{]}
+  \item
+    {[}Leaves{]}
+  \item
+    {[}Roots{]}
+  \item
+    {[}Soil{]}
+  \end{itemize}
+\item
+  {[}Plant phenotype{]}
+\end{itemize}
 
 \chapter{Getting Started}\label{getting_started}
 
