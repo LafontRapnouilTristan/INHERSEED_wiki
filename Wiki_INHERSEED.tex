@@ -334,7 +334,7 @@
 
 \usepackage{hyperref}
 \hypersetup{
-  pdftitle={Memoir Template},
+  pdftitle={INHERSEED's wiki},
   pdfauthor={Tristan Lafont Rapnouil, Mathilde Brunel \& Marie Simonin},
   colorlinks=true,
   linkcolor=Maroon,
@@ -349,7 +349,7 @@
 % Title, author, date from YAML to LaTeX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Memoir Template}
+\title{INHERSEED's wiki}
 
 \author{Tristan Lafont Rapnouil, Mathilde Brunel \& Marie Simonin}
 
@@ -457,39 +457,47 @@ The Data Management Plan is hosted \href{}{here}.
 
 Deliverable of the project are:
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   Data, protocols and workflows:
+\end{enumerate}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    github hosted document. (Text)
-  \item
-    Metabarcoding dataset: amplicon sequencing dataset as .fastq for \emph{gyrB} and \emph{ITS1} markers. (Dataset)
-  \item
-    Seed and plant phenotype as .csv. (Dataset)
-  \item
-    Processing scripts and pipelines (Python, Bash and R). (Workflow)
-  \item
-    Protocols for all data acquisition (Text)
-  \end{itemize}
+\begin{itemize}
+\tightlist
 \item
-  Results:
+  github hosted document. (Text)
+\item
+  Metabarcoding dataset: amplicon sequencing dataset as .fastq for \emph{gyrB} and \emph{ITS1} markers. (Dataset)
+\item
+  Seed and plant phenotype as .csv. (Dataset)
+\item
+  Processing scripts and pipelines (Python, Bash and R). (Workflow)
+\item
+  Protocols for all data acquisition (Text)
 \end{itemize}
 
-\textbf{WP1}:
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Results:
+\end{enumerate}
+
+*\textbf{WP1}:
 + Plant taxonomy and traits influence on seed microbiota
 + Assessment of microbial transmission from plants to seeds
 + Exploring phylosymbiosis on seed microbiota
 
-\textbf{WP2}:
+*\textbf{WP2}:
 + Evaluation of microbial transmission from seeds to seedlings
 + Inherited and non-inherited taxa transmission success
 + Exploring phylosymbiosis on seedling microbiota
 + Identification of microbial taxa with potential effects on seedling phenotypes
 
-\textbf{WP3}:
+*\textbf{WP3}:
 + Experimental validation of vertical transmission of inherited taxa
 + Identification of inherited taxa affecting plant fitness
 + Identification of inherited taxa influencing microbiota assembly
@@ -538,15 +546,7 @@ Deliverable of the project are:
   {[}Plant phenotype{]}
 \end{itemize}
 
-This template is based on \emph{Bookdown} and the \emph{Memoir} LaTeX class to allow writing a book, a report, a PhD thesis, etc. in \emph{R Markdown}.
-
-The main file is \emph{index.Rmd} which contains the description of the book in its header. All other \emph{.Rmd} files in the folder contain a chapter.
-The \emph{references.bib} file contains the bibliography.
-
-This file will have to be deleted, as well as \emph{81-getting\_started.Rmd} and \emph{82-syntax.Rmd}: they have to be replaced by the content of the book.
-
-To get started, create a new R project from this folder.
-Then open \emph{index.Rmd} and click on the \emph{Build Book} button in the \emph{Build} window of Rstudio.
+\#References
 
 
 % Bibliography
