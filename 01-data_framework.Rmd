@@ -13,7 +13,7 @@ The Data Management Plan is hosted [here]().
 
 Deliverable of the project are:
 
-* Data, protocols and workflows:
+1. Data, protocols and workflows:
 
   + github hosted document. (Text)
   + Metabarcoding dataset: amplicon sequencing dataset as .fastq for *gyrB* and *ITS1* markers. (Dataset)
@@ -21,20 +21,20 @@ Deliverable of the project are:
   + Processing scripts and pipelines (Python, Bash and R). (Workflow)
   + Protocols for all data acquisition (Text)
 
-* Results:
+2. Results:
 
-**WP1**:
+***WP1**:
   + Plant taxonomy and traits influence on seed microbiota
   + Assessment of microbial transmission from plants to seeds
   + Exploring phylosymbiosis on seed microbiota
   
-**WP2**:
+***WP2**:
   + Evaluation of microbial transmission from seeds to seedlings
   + Inherited and non-inherited taxa transmission success
   + Exploring phylosymbiosis on seedling microbiota
   + Identification of microbial taxa with potential effects on seedling phenotypes
 
-**WP3**:
+***WP3**:
   + Experimental validation of vertical transmission of inherited taxa
   + Identification of inherited taxa affecting plant fitness
   + Identification of inherited taxa influencing microbiota assembly

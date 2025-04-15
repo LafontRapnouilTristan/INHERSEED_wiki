@@ -4,7 +4,7 @@ author: "Tristan Lafont Rapnouil, Mathilde Brunel & Marie Simonin"
 date: "`r Sys.Date()`"
 url: https://GitHubID.github.io/Repository/
 github-repo: GitHubID/Repository
-description: "Bookdown template based on LaTeX memoir class"
+description: "Wiki for the INHERSEED project"
 cover-image: "images/logo.png"
 # Title page...
 maintitlepage:
