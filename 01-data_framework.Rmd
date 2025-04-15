@@ -23,18 +23,21 @@ Deliverable of the project are:
 
 2. Results:
 
-***WP1**:
+**WP1**:
+
   + Plant taxonomy and traits influence on seed microbiota
   + Assessment of microbial transmission from plants to seeds
   + Exploring phylosymbiosis on seed microbiota
   
-***WP2**:
+**WP2**:
+
   + Evaluation of microbial transmission from seeds to seedlings
   + Inherited and non-inherited taxa transmission success
   + Exploring phylosymbiosis on seedling microbiota
   + Identification of microbial taxa with potential effects on seedling phenotypes
 
-***WP3**:
+**WP3**:
+
   + Experimental validation of vertical transmission of inherited taxa
   + Identification of inherited taxa affecting plant fitness
   + Identification of inherited taxa influencing microbiota assembly
@@ -42,16 +45,16 @@ Deliverable of the project are:
   
 #links to data info
 
-* [Project proposal](document/full_proposal/aapg_20203-INHERSEED_full_proposal.pdf)
-* [Original seeds sources]
-  + [species list]
-  + [suppliers]
-* [Seed phenotype]
-  + [Seed pictures]
-  + [TRAITOR software]
-* [DNA extractions]
-  + [Seeds]
-  + [Leaves]
-  + [Roots]
-  + [Soil]
-* [Plant phenotype]
+* [Project proposal][document/full_proposal/aapg_20203-INHERSEED_full_proposal.pdf]
+* [Original seeds sources][]
+  + [species list][]
+  + [suppliers][]
+* [Seed phenotype][]
+  + [Seed pictures][]
+  + [TRAITOR software][]
+* [DNA extractions][]
+  + [Seeds][]
+  + [Leaves][]
+  + [Roots][]
+  + [Soil][]
+* [Plant phenotype][]
