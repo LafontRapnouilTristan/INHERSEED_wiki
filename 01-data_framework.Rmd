@@ -58,3 +58,4 @@ Deliverable of the project are:
   + [Roots][]
   + [Soil][]
 * [Plant phenotype][]
+* [R script to download all datasets][]
