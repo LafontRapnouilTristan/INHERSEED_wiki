@@ -2,4 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-test2beignored/
+test2beignored/data
+CredentialsCreation.R
