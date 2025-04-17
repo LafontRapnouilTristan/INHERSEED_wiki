@@ -19,8 +19,9 @@ credentials <- read.aes(filename = "CredentialsAndSecurity/credentials.txt",key 
 # )
 
 # Read file
-data_ordered_seeds <- readxl::read_xlsx("test2beignored/data/ANR JCJC_liste_espece_finale_May2024.xlsx",sheet = 2) #list of ordered seeds
-data_quantity_seeds <- readxl::read_xlsx("test2beignored/data/ANR JCJC_liste_espece_finale_May2024.xlsx",sheet = 5) #seeds sowing and stock tracking
+data_ordered_seeds <- readxl::read_xlsx("test2beignored/data/monitoring_and_info.xlsx",sheet = 2) #list of ordered seeds
+data_quantity_seeds <- readxl::read_xlsx("test2beignored/data/monitoring_and_info.xlsx",sheet = 5) #seeds sowing and stock tracking
+data_phenotype_plants <- readxl::read_xlsx("test2beignored/data/phenotype.xlsx",sheet = 1) # phenotype info
 
 # Format taxonomy
 data_ordered_seeds%<>%
@@ -95,7 +96,16 @@ ggtree::ggtree(test_tree,
 
 
 
+# Leaf xploration
 
-
-
-   
+# install.packages("pliman")
+library(pliman)
+path_to_pics <- "../../Data/pics_greenhouse_and_leaves/"
+leaves <- 
+  image_import("P1190577.JPG",
+               path = path_to_pics,
+               plot = TRUE)
+image_index(leaves)
+count <- analyze_objects(leaves,
+                         marker = "id",
+                         fill_hull = T)
