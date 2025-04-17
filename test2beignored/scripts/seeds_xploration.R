@@ -40,12 +40,12 @@ data_ordered_seeds %<>%
   mutate(species=paste0(genus,"_",species))
 data_ordered_seeds%<>% #convert to numeric, will generate NA because some are text but its temporary
   mutate(n_seeds=as.numeric(n_seeds),
-         weight_1000_seeds=as.numeric(weight_1000_seeds))
+         weight_1000_seeds=as.numeric(weight_1000_seeds))%>%
+  arrange(desc(weight_1000_seeds))%>%
+  mutate(species=forcats::fct_inorder(species))
 
 # Seed mass
 data_ordered_seeds%>%
-  arrange(desc(weight_1000_seeds))%>%
-  mutate(species=forcats::fct_inorder(species))%>%
   ggplot(aes(x=species,y=weight_1000_seeds))+
   geom_point()+
   scale_y_log10()+
@@ -53,7 +53,34 @@ data_ordered_seeds%>%
   theme(axis.text.x = element_text(angle=90, hjust=1),
         axis.title.x = element_blank(),
         text = element_text(face="bold"))+
-  ylab("1000 seeds weight (g)")
+  ylab("1000 seeds weight (g)")+
+  data_ordered_seeds%>%
+  mutate(nb_seeds_needed=0.5/(weight_1000_seeds/1000))%>%
+  ggplot(aes(x=species,y=nb_seeds_needed))+
+  geom_point()+
+  scale_y_log10()+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle=90, hjust=1),
+        axis.title.x = element_blank(),
+        text = element_text(face="bold"))+
+  ylab("Nb seeds to get 0.5g (1mL macerate)")+
+  geom_hline(aes(yintercept = 50),color="darkorange")+
+  geom_hline(aes(yintercept = 20),color="darkorchid4")
+
+data_quantity_seeds%>%
+  rename(`Common name`=`espèce `,
+         weight_1000_seeds=PMG)%>%
+  left_join(select(data_ordered_seeds,`Common name`,species,family,genus))%>%
+  arrange(desc(weight_1000_seeds))%>%
+  mutate(species=forcats::fct_relevel(species,levels(data_ordered_seeds$species)))%>%
+  ggplot(aes(x=species,y=`graines restantes`))+
+  geom_point()+
+  scale_y_log10()+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle=90, hjust=1),
+        axis.title.x = element_blank(),
+        text = element_text(face="bold"))+
+  geom_hline(aes(yintercept = 20),color="darkorchid4")
 
 # Insert in plant Megatree
 
@@ -62,7 +89,9 @@ test_tree <- rtrees::get_tree(sp_list = data_ordered_seeds,
                      taxon = "plant",
                      scenario = "at_basal_node",
                      show_grafted = TRUE)
-plot(test_tree, no.margin = T, type = "fan")
+ggtree::ggtree(test_tree,
+              layout="fan")+
+  ggtree::geom_tiplab()
 
 
 
