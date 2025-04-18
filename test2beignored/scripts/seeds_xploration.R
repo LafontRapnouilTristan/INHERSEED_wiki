@@ -17,6 +17,14 @@ credentials <- read.aes(filename = "CredentialsAndSecurity/credentials.txt",key 
 #   password = credentials$password,
 #   verbose = FALSE
 # )
+# webdav::webdav_download_file(
+#   "https://nextcloud.inrae.fr/remote.php/dav/files/tlafontrapn",  #next cloud webdav adress
+#   file_path = "INHERSEED/phenotype.xlsx", #path to the file I want to dl
+#   destination_path = "test2beignored/data", #path to the local folder
+#   username = credentials$login, #credentials created beforehand
+#   password = credentials$password,
+#   verbose = FALSE
+# )
 
 # Read file
 data_ordered_seeds <- readxl::read_xlsx("test2beignored/data/monitoring_and_info.xlsx",sheet = 2) #list of ordered seeds
