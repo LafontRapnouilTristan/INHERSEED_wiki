@@ -11,8 +11,8 @@ credentials <- read.aes(filename = "CredentialsAndSecurity/credentials.txt",key 
 # Should be run once or when the file is updated
 # webdav::webdav_download_file(
 #   "https://nextcloud.inrae.fr/remote.php/dav/files/tlafontrapn",  #next cloud webdav adress
-#   file_path = "INHERSEED/ANR JCJC_liste_espece_finale_May2024.xlsx", #path to the file I want to dl
-#   destination_path = "test2beignored/", #path to the local folder
+#   file_path = "INHERSEED/monitoring_and_info.xlsx", #path to the file I want to dl
+#   destination_path = "test2beignored/data", #path to the local folder
 #   username = credentials$login, #credentials created beforehand
 #   password = credentials$password,
 #   verbose = FALSE
