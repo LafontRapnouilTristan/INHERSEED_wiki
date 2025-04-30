@@ -216,10 +216,6 @@ knitr::opts_chunk$set(dev.args = list(bg = "transparent"))
 set.seed(973)
 ```
 
-```{r logo, echo=FALSE, out.width="80%"}
-knitr::include_graphics('./images/logo.png')
-```
-
 # Introduction {-}
  
 Plant microbial INHERitance across generations through SEEDs: impact of this primary inoculum on plant fitness and microbiota assembly
@@ -229,6 +225,10 @@ This document acts as a wiki-like platform regarding all protocols and data trea
 While not all data and protocols can be hosted on Github, links to where they are actually findable are persented in this document.
 
 For any questions related to this project, you can contact <marie.simonin@inrae.fr> and/or <tristan.lafontrapnouil@gmail.com>. 
+
+```{r logo, echo=FALSE, out.width="80%"}
+knitr::include_graphics('./images/logo.png')
+```
 <!-- The \mainmatter command marks the beginning of the LaTeX document body--> 
 <!-- It must not be deleted-->
 \mainmatter
