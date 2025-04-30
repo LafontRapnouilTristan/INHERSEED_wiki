@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.4.14)  15 APR 2025 10:48
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.4.14)  22 APR 2025 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2431,7 +2431,13 @@ Package hyperref Warning: Suppressing link with empty target on input line 456.
 
 [1
 
-] [2]
+]
+Overfull \hbox (111.43858pt too wide) in paragraph at lines 523--525
+[]\TU/lmr/m/n/12 [Project proposal][document/full_proposal/aapg_20203-INHERSEED
+_full_proposal.pdf] 
+ []
+
+[2]
 
 ******************************************************
 Stock height and width: 845.04684pt by 597.50787pt
@@ -2453,7 +2459,7 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 
-LaTeX Warning: Empty bibliography on input line 558.
+LaTeX Warning: Empty bibliography on input line 573.
 
 
 ******************************************************
@@ -2520,18 +2526,18 @@ Sidefoothsep and sidefootwidth: 7pt and 92pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-LaTeX Info: Redefining \rmfamily on input line 589.
-LaTeX Info: Redefining \sffamily on input line 589.
-LaTeX Info: Redefining \ttfamily on input line 589.
+LaTeX Info: Redefining \rmfamily on input line 604.
+LaTeX Info: Redefining \sffamily on input line 604.
+LaTeX Info: Redefining \ttfamily on input line 604.
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--595
+Underfull \hbox (badness 10000) in paragraph at lines 608--610
 
  []
 
 Package polyglossia Info: Option: English, variant=american.
-LaTeX Info: Redefining \rmfamily on input line 596.
-LaTeX Info: Redefining \sffamily on input line 596.
-LaTeX Info: Redefining \ttfamily on input line 596.
+LaTeX Info: Redefining \rmfamily on input line 611.
+LaTeX Info: Redefining \sffamily on input line 611.
+LaTeX Info: Redefining \ttfamily on input line 611.
 Package polyglossia Info: Option: English, variant=american.
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
@@ -2642,7 +2648,7 @@ Package logreq Info: Writing requests to 'Wiki_INHERSEED.run.xml'.
 Here is how much of TeX's memory you used:
  44675 strings out of 476191
  879241 string characters out of 5812072
- 1827004 words of memory out of 5000000
+ 1829004 words of memory out of 5000000
  64697 multiletter control sequences out of 15000+600000
  482076 words of font info for 64 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
