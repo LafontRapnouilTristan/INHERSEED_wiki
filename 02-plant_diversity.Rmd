@@ -1,3 +1,10 @@
+```{r set}
+#| message: false
+#| include: false
+library(tidyverse)
+library(knitr)
+```
+
 # Original seeds sources
 
 ## Species list
@@ -15,7 +22,7 @@ We focused on non-woody annual species and tried to have a good spread across th
 
 In order to interpret our results, we wanted to get as many information on our species from botany to chemistry.
 
-###TRY
+### TRY
 First we identified a set of traits that may be found on the [TRY database](https://www.try-db.org/) [@kattge2019].
 TRY requires manual requests and we used R to prepare our requests.
 
@@ -26,9 +33,9 @@ First check if our species have entries in TRY.
 # INSTALL AND LOAD
 # install.packages("rtry")
 library(rtry)
-
+library()
 #get list of TRY species
-# download.file('https://try-db.org/dnld/TryAccSpecies.tsv', destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "-r -p --random-wait", quiet = T)
+# download.file('https://try-db.org/dnld/TryAccSpecies.txt', destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "-r -p --random-wait", quiet = T)
 #get our species list
 species_list <- readr::read_tsv("data/species_list_INHERSEED.tsv")
 #check overlap and merge
@@ -38,7 +45,7 @@ try_sp <- species_list %>%
   mutate(scientific_cleaned=ifelse(scientific_cleaned=="Legousia veneris","Legousia speculum-veneris",scientific_cleaned))%>% #rename that species properly
   na.omit() %>%
   unique() %>%
-  left_join(readr::read_tsv("data/TRY/TryAccSpecies.tsv"),
+  left_join(readr::read_tsv("data/TRY/TryAccSpecies.txt"),
             by = c("scientific_cleaned" = "AccSpeciesName")
   )
 
@@ -111,6 +118,6 @@ try_release%>%
   mutate(is_na_var=ifelse(is.na(value),0,1))%>%
   summarise(pct_species_avail=(sum(is_na_var)/82)*100)%>%
   filter(pct_species_avail>0)%>%
-  readr::write_tsv("../../Data/list_traits_TRY/traits_with_some_values.tsv")
+  readr::write_tsv("data/TRY/release/traits_with_some_values.tsv")
 ```
 
