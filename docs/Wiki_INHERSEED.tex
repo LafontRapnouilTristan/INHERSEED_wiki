@@ -48,6 +48,46 @@
 % Strikeout
 
 % Necessary for code chunks
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 % Listings package
 
@@ -353,7 +393,7 @@
 
 \author{Tristan Lafont Rapnouil, Mathilde Brunel \& Marie Simonin}
 
-\date{2025-04-22}
+\date{2025-05-23}
 
 
 % Include headers (preamble.tex) here
@@ -421,144 +461,240 @@ Leave an empty line for line breaks.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \LargeMargins
-\chapter*{Introduction}\label{introduction}
-\addcontentsline{toc}{chapter}{Introduction}
+\chapter{Title page\ldots{}}\label{title-page}
 
-Plant microbial INHERitance across generations through SEEDs: impact of this primary inoculum on plant fitness and microbiota assembly
-
-This document acts as a wiki-like platform regarding all protocols and data treatment within the INHERSEED project. The project is lead by Marie Simonin (PI - INSERT WEBSITE), Tristan Lafont Rapnouil is a post-doc in charge of monitoring the project progress and data acquisition and, Mathilde Brunel is a technician involved in greenhouse managing and wetlab experimentations.
-
-While not all data and protocols can be hosted on Github, links to where they are actually findable are persented in this document.
-
-For any questions related to this project, you can contact \href{mailto:marie.simonin@inrae.fr}{\nolinkurl{marie.simonin@inrae.fr}} and/or \href{mailto:tristan.lafontrapnouil@gmail.com}{\nolinkurl{tristan.lafontrapnouil@gmail.com}}.
-\mainmatter
+Placeholder
 
 \chapter{Data framework}\label{data-framework}
 
-INHERSEED aims to respect the FAIR principles for open science.
-To do so we share in the present document protocols, raw data, processing scripts/procedures and, processed data as used in resulting articles \ref{fig:dframework}.
+Placeholder
 
-\scriptsize
+\chapter{Original seeds sources}\label{original-seeds-sources}
 
-\begin{figure}
+\section{Species list}\label{species-list}
 
-{\centering \includegraphics[width=0.5\linewidth]{./documents/d_framework} 
+XX plant species were used in INHERSEED.
+This represent a challenge both to grow and monitor such diversity as well as to sample and properly phenotype plants and seeds varying tremendously in size, shapes and looks.
+Acknowledging this challenge we tried to adopt protocols and data viewing/analysis allowing to compare \emph{Arabidopsis}, carrots or beans.
+That being said, we recognize that critics can still be made and our results should be regarded with the diversity-challenge in mind!
 
-}
+The full species list:
 
-\caption{Shared info regarding acquisition, raw data, processing and published data in the INHERSEED project}\label{fig:dframework}
-\end{figure}
+We focused on non-woody annual species and tried to have a good spread across the Angiosperm phylogeny:
 
-\normalsize
+\section{General informations}\label{general-informations}
 
-To ensure reproducibility data standard processing (bioinformatic pipeline and diagnostics) were embbeded in snakemake pipeline.
-R session info were also stored as text files available \href{}{here}.
-The Data Management Plan is hosted \href{}{here}.
+In order to interpret our results, we wanted to get as many information on our species from botany to chemistry.
 
-Deliverable of the project are:
+\#\#\#TRY
+First we identified a set of traits that may be found on the \href{https://www.try-db.org/}{TRY database} \autocite{kattge2019}.
+TRY requires manual requests and we used R to prepare our requests.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Data, protocols and workflows:
-\end{enumerate}
+\subsubsection{Request}\label{request}
+
+First check if our species have entries in TRY.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# INSTALL AND LOAD}
+\CommentTok{\# install.packages("rtry")}
+\FunctionTok{library}\NormalTok{(rtry)}
+\FunctionTok{library}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in library(): les bibliothèques '/usr/local/lib/R/site-library',
+## '/usr/lib/R/site-library' ne contiennent aucun package
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#get list of TRY species}
+\CommentTok{\# download.file(\textquotesingle{}https://try{-}db.org/dnld/TryAccSpecies.txt\textquotesingle{}, destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "{-}r {-}p {-}{-}random{-}wait", quiet = T)}
+\CommentTok{\#get our species list}
+\NormalTok{species\_list }\OtherTok{\textless{}{-}}\NormalTok{ readr}\SpecialCharTok{::}\FunctionTok{read\_tsv}\NormalTok{(}\StringTok{"data/species\_list\_INHERSEED.tsv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 88 Columns: 1
+## -- Column specification --------------------------------------------------------
+## Delimiter: "\t"
+## chr (1): species_for_tree
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#check overlap and merge}
+\NormalTok{try\_sp }\OtherTok{\textless{}{-}}\NormalTok{ species\_list }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{rename}\NormalTok{(}\AttributeTok{scientific\_cleaned =}\NormalTok{ species\_for\_tree)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(scientific\_cleaned) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{scientific\_cleaned=}\FunctionTok{ifelse}\NormalTok{(scientific\_cleaned}\SpecialCharTok{==}\StringTok{"Legousia veneris"}\NormalTok{,}\StringTok{"Legousia speculum{-}veneris"}\NormalTok{,scientific\_cleaned))}\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\#rename that species properly}
+  \FunctionTok{na.omit}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{unique}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{left\_join}\NormalTok{(readr}\SpecialCharTok{::}\FunctionTok{read\_tsv}\NormalTok{(}\StringTok{"data/TRY/TryAccSpecies.txt"}\NormalTok{),}
+            \AttributeTok{by =} \FunctionTok{c}\NormalTok{(}\StringTok{"scientific\_cleaned"} \OtherTok{=} \StringTok{"AccSpeciesName"}\NormalTok{)}
+\NormalTok{  )}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 305594 Columns: 7
+## -- Column specification --------------------------------------------------------
+## Delimiter: "\t"
+## chr (1): AccSpeciesName
+## dbl (6): AccSpeciesID, ObsNum, ObsGRNum, MeasNum, MeasGRNum, TraitNum
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#species not in try}
+\NormalTok{try\_sp}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{is\_in\_try=}\FunctionTok{ifelse}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(AccSpeciesID),}\StringTok{"Not in TRY"}\NormalTok{,}\StringTok{"In Try"}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{is\_in\_try,}\AttributeTok{fill=}\NormalTok{is\_in\_try))}\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{stat =} \StringTok{"count"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{ylab}\NormalTok{(}\StringTok{"Number of species"}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{xlab}\NormalTok{(}\StringTok{""}\NormalTok{)}\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position =} \StringTok{"none"}\NormalTok{,}
+        \AttributeTok{text =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{face=}\StringTok{"bold"}\NormalTok{))}\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\FunctionTok{paste0}\NormalTok{(}\FunctionTok{sum}\NormalTok{(}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(try\_sp}\SpecialCharTok{$}\NormalTok{AccSpeciesID)),}\StringTok{" species out of "}\NormalTok{, }\FunctionTok{nrow}\NormalTok{(try\_sp),}\StringTok{" are in TRY"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in geom_histogram(stat = "count"): Ignoring unknown parameters:
+## `binwidth`, `bins`, and `pad`
+\end{verbatim}
+
+\includegraphics{Wiki_INHERSEED_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+Now we can build a request for TRY with our traits of interest.
+We handpicked from TRY traits list XX traits that were relevant to us.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{try\_request }\OtherTok{\textless{}{-}}\NormalTok{ try\_sp}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{species\_list=}\FunctionTok{paste0}\NormalTok{(AccSpeciesID,}\AttributeTok{collapse =} \StringTok{", "}\NormalTok{))}
+\NormalTok{try\_request}\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  readr}\SpecialCharTok{::}\FunctionTok{write\_tsv}\NormalTok{(}\StringTok{"data/TRY/requests/TryReqSpecies.tsv"}\NormalTok{)}
+
+\NormalTok{traits\_try }\OtherTok{\textless{}{-}}\NormalTok{ readxl}\SpecialCharTok{::}\FunctionTok{read\_xlsx}\NormalTok{(}\StringTok{"data/TRY/traits\_of\_interest/Traits repro TRY database.xlsx"}\NormalTok{)}
+\NormalTok{try\_request\_traits }\OtherTok{\textless{}{-}}\NormalTok{ traits\_try}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(tokeep}\SpecialCharTok{==}\StringTok{"y"}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(TraitID)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{traits\_list=}\FunctionTok{paste0}\NormalTok{(TraitID,}\AttributeTok{collapse =} \StringTok{", "}\NormalTok{))}
+\NormalTok{try\_request\_traits}\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  readr}\SpecialCharTok{::}\FunctionTok{write\_tsv}\NormalTok{(}\StringTok{"data/TRY/requests/TryReqTraits.tsv"}\NormalTok{)}
+\CommentTok{\# 41259 {-} ID of the first request}
+\end{Highlighting}
+\end{Shaded}
+
+Then we requested TRY data access using our species and traits lists.
+
+\#\#\#\#Release
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{try\_release }\OtherTok{\textless{}{-}}\NormalTok{ readr}\SpecialCharTok{::}\FunctionTok{read\_tsv}\NormalTok{(}\StringTok{"data/TRY/release/41259\_1905202519280\_TRY\_relaease/41259.txt"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## New names:
+## * `` -> `...29`
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: One or more parsing issues, call `problems()` on your data frame for details,
+## e.g.:
+##   dat <- vroom(...)
+##   problems(dat)
+\end{verbatim}
+
+\begin{verbatim}
+## Rows: 417530 Columns: 29
+## -- Column specification --------------------------------------------------------
+## Delimiter: "\t"
+## chr (16): LastName, FirstName, Dataset, SpeciesName, AccSpeciesName, TraitNa...
+## dbl (11): DatasetID, AccSpeciesID, ObservationID, ObsDataID, TraitID, DataID...
+## lgl  (2): RelUncertaintyPercent, ...29
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{try\_release }\SpecialCharTok{\%\textless{}\textgreater{}\%}
+  \FunctionTok{select}\NormalTok{(AccSpeciesName, TraitName, StdValue) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{rename}\NormalTok{(}
+    \AttributeTok{species =}\NormalTok{ AccSpeciesName,}
+    \AttributeTok{trait =}\NormalTok{ TraitName,}
+    \AttributeTok{value =}\NormalTok{ StdValue}
+\NormalTok{  ) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(species, trait) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{value =} \FunctionTok{mean}\NormalTok{(}\FunctionTok{as.numeric}\NormalTok{(value), }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  tidyr}\SpecialCharTok{::}\FunctionTok{pivot\_wider}\NormalTok{(}\AttributeTok{values\_from =} \StringTok{"value"}\NormalTok{, }\AttributeTok{names\_from =} \StringTok{"trait"}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\FunctionTok{across}\NormalTok{(}\FunctionTok{everything}\NormalTok{(),}\SpecialCharTok{\textasciitilde{}}\FunctionTok{ifelse}\NormalTok{(.x}\SpecialCharTok{==}\StringTok{"NaN"}\NormalTok{,}\ConstantTok{NA}\NormalTok{,.x)))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `summarise()` has grouped output by 'species'. You can override using the
+## `.groups` argument.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{try\_release}\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  reshape2}\SpecialCharTok{::}\FunctionTok{melt}\NormalTok{(}\AttributeTok{id.vars=}\FunctionTok{c}\NormalTok{(}\StringTok{"species"}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(variable)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{is\_na\_var=}\FunctionTok{ifelse}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(value),}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{pct\_species\_avail=}\NormalTok{(}\FunctionTok{sum}\NormalTok{(is\_na\_var)}\SpecialCharTok{/}\DecValTok{82}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x=}\NormalTok{pct\_species\_avail,}\AttributeTok{y=}\NormalTok{variable))}\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{()}\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Wiki_INHERSEED_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{try\_release}\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  reshape2}\SpecialCharTok{::}\FunctionTok{melt}\NormalTok{(}\AttributeTok{id.vars=}\FunctionTok{c}\NormalTok{(}\StringTok{"species"}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(variable)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{is\_na\_var=}\FunctionTok{ifelse}\NormalTok{(}\FunctionTok{is.na}\NormalTok{(value),}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{))}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{pct\_species\_avail=}\NormalTok{(}\FunctionTok{sum}\NormalTok{(is\_na\_var)}\SpecialCharTok{/}\DecValTok{82}\NormalTok{)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(pct\_species\_avail}\SpecialCharTok{\textgreater{}}\DecValTok{0}\NormalTok{)}\SpecialCharTok{\%\textgreater{}\%}
+\NormalTok{  readr}\SpecialCharTok{::}\FunctionTok{write\_tsv}\NormalTok{(}\StringTok{"data/TRY/release/traits\_with\_some\_values.tsv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\chapter{They helped us!}\label{they-helped-us}
 
 \begin{itemize}
 \tightlist
 \item
-  github hosted document. (Text)
+  Coralie MARAIS
 \item
-  Metabarcoding dataset: amplicon sequencing dataset as .fastq for \emph{gyrB} and \emph{ITS1} markers. (Dataset)
+  Cas
 \item
-  Seed and plant phenotype as .csv. (Dataset)
+  Emile
 \item
-  Processing scripts and pipelines (Python, Bash and R). (Workflow)
+  Claude
 \item
-  Protocols for all data acquisition (Text)
-\end{itemize}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
+  Rémi GARDET
 \item
-  Results:
-\end{enumerate}
-
-\begin{itemize}
-\item
-  \textbf{WP1}:
-\item
-  Plant taxonomy and traits influence on seed microbiota
-\item
-  Assessment of microbial transmission from plants to seeds
-\item
-  Exploring phylosymbiosis on seed microbiota
-\item
-  \textbf{WP2}:
-\item
-  Evaluation of microbial transmission from seeds to seedlings
-\item
-  Inherited and non-inherited taxa transmission success
-\item
-  Exploring phylosymbiosis on seedling microbiota
-\item
-  Identification of microbial taxa with potential effects on seedling phenotypes
-\item
-  \textbf{WP3}:
-\item
-  Experimental validation of vertical transmission of inherited taxa
-\item
-  Identification of inherited taxa affecting plant fitness
-\item
-  Identification of inherited taxa influencing microbiota assembly
-\end{itemize}
-
-\#links to data info
-
-\begin{itemize}
-\tightlist
-\item
-  {[}Project proposal{]}{[}document/full\_proposal/aapg\_20203-INHERSEED\_full\_proposal.pdf{]}
-\item
-  {[}Original seeds sources{]}{[}{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    {[}species list{]}{[}{]}
-  \item
-    {[}suppliers{]}{[}{]}
-  \end{itemize}
-\item
-  {[}Seed phenotype{]}{[}{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    {[}Seed pictures{]}{[}{]}
-  \item
-    {[}TRAITOR software{]}{[}{]}
-  \end{itemize}
-\item
-  {[}DNA extractions{]}{[}{]}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    {[}Seeds{]}{[}{]}
-  \item
-    {[}Leaves{]}{[}{]}
-  \item
-    {[}Roots{]}{[}{]}
-  \item
-    {[}Soil{]}{[}{]}
-  \end{itemize}
-\item
-  {[}Plant phenotype{]}{[}{]}
-\item
-  {[}R script to download all datasets{]}{[}{]}
+  Elodie LEMMENS
 \end{itemize}
 
 \#References
