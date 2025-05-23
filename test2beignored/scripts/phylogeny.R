@@ -331,7 +331,7 @@ pt1 <- ggtree(new_tree)
 
 pt1 %<+% tab_new_tree + 
   ggtree::geom_tippoint(aes(color = is_in_our_dataset))+
-  ggtree::  geom_nodelab(
+  ggtree::geom_nodelab(
     mapping = aes(
       label = deep_node_label),
     fill = "lightgrey",
@@ -342,9 +342,9 @@ test <-
   tab_new_tree%>%
   filter(is_in_our_dataset=="yes")
 
-path2keep<- NULL
+path2keep <- NULL
 for(nodez in test$node){
-  path2genus <- ggtree::get.path(ape::as.phylo(tab_new_tree),10501,nodez) #path from the tip to magnoliophyta
+  path2genus <- ggtree::get.path(ape::as.phylo(tab_new_tree),10515,nodez) #path from the tip to magnoliophyta
   path2keep <- c(path2keep,path2genus[-length(path2genus)])
 }
 nodez2keep <- unique(path2keep)
@@ -355,18 +355,27 @@ alltips <- tab_new_tree%>%
 
 path2collapse <- NULL
 for(tipz in alltips$node){
-  path2magnoliophyta <- ggtree::get.path(ape::as.phylo(tab_new_tree),10501,tipz) #path from the tip to magnoliophyta
+  path2magnoliophyta <- ggtree::get.path(ape::as.phylo(tab_new_tree),10515,tipz) #path from the tip to magnoliophyta
   path2magnoliophyta <- rev(path2magnoliophyta) #reverse it
   pathpart2remove <- path2magnoliophyta[!path2magnoliophyta%in%nodez2keep] # remove those that we want to keep
+  #problem here. Should check that the node isnt an ancestor of one of our tips
+  
   highestnode2remove <- pathpart2remove[length(pathpart2remove)] # keep only highest node
   
+  testing <- unique(unlist(tidytree::offspring(ape::as.phylo(tab_new_tree),path2collapse)))
+  testing <- ifelse(is.null(testing),"NOPE",testing)
   if(highestnode2remove%in%path2collapse| # if alrdy tagged as to remove then don't add it
-     highestnode2remove%in%unique(unlist(tidytree::offspring(ape::as.phylo(tab_new_tree),path2collapse)))| # if offspring of a tagged one dont add
+     highestnode2remove%in%testing| # if offspring of a tagged one dont add
      highestnode2remove%in%alltips$node){ # if a tip don't add
     path2collapse <- path2collapse
   }else{
     path2collapse <- c(path2collapse,highestnode2remove) # add it to path2collapse
   }
+  # if(any(path2collapse%in%tidytree::offspring(ape::as.phylo(tab_new_tree),highestnode2remove))){
+  #   path2collapse <- path2collapse[-c(which(path2collapse%in%tidytree::offspring(ape::as.phylo(tab_new_tree),highestnode2remove)))]#remove offsprings present in path2collapse
+  # }else{
+  #   path2collapse <- path2collapse
+  # }
   print(tipz)
 }
 length(path2collapse)==length(unique(path2collapse))
@@ -380,3 +389,8 @@ pt3 <-  purrr::reduce(
 )
 warnings()
 pt3
+
+
+collapse(pt1,16380)
+
+remotes::install_github("djw533/micro.gen.extra")
