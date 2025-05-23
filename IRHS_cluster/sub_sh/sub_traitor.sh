@@ -33,6 +33,6 @@ traitor align -i "./images" -m "./images_extracted" -o "./images_aligned"
 
 # Run measurements
 echo "run measurements"
-traitor extract -i "./images_aligned" -o "./objects_measurements.csv" -n 8 -t 8
+traitor measure -i "./images_aligned" -o "./objects_measurements.csv" -n 8 -t 8
 
 echo "end script"
