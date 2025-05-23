@@ -1,6 +1,8 @@
 ```{r set}
 #| message: false
 #| include: false
+install.packages(tidyverse)
+install.packages(knitr)
 library(tidyverse)
 library(knitr)
 ```
@@ -31,9 +33,8 @@ TRY requires manual requests and we used R to prepare our requests.
 First check if our species have entries in TRY.
 ```{r}
 # INSTALL AND LOAD
-# install.packages("rtry")
+install.packages("rtry")
 library(rtry)
-library()
 #get list of TRY species
 # download.file('https://try-db.org/dnld/TryAccSpecies.txt', destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "-r -p --random-wait", quiet = T)
 #get our species list
