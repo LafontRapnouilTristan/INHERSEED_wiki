@@ -1,8 +1,8 @@
 ```{r set}
 #| message: false
 #| include: false
-install.packages(tidyverse)
-install.packages(knitr)
+install.packages("tidyverse")
+install.packages("knitr")
 library(tidyverse)
 library(knitr)
 ```
