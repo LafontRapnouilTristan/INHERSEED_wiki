@@ -28,7 +28,7 @@ First check if our species have entries in TRY.
 library(rtry)
 
 #get list of TRY species
-download.file('https://try-db.org/dnld/TryAccSpecies.tsv', destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "-r -p --random-wait", quiet = T)
+# download.file('https://try-db.org/dnld/TryAccSpecies.tsv', destfile = "data/TRY/TryAccSpecies.tsv", method = "wget", extra = "-r -p --random-wait", quiet = T)
 #get our species list
 species_list <- readr::read_tsv("data/species_list_INHERSEED.tsv")
 #check overlap and merge
